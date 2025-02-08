@@ -21,70 +21,77 @@ body {
     width: 70%; 
 }
 
-.photo-container_1 {
+.restaurant-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    
+    gap: 20px;
+    margin: 15px;
 }
 
-.photo-container_1 img {
-    width: 32%; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 0 1%; 
+.restaurant-card {
+    width: calc(100% / 3 - 20px);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
 }
-.photo-container_2 {
+
+.restaurant-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.info {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.photo-container_2 img {
-    width: 32%; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 0 1%; 
-}
-.photo-container_3 {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    
+.time {
+    background: orange;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
 }
 
-.photo-container_3 img {
-    width: 32%; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 0 1%; 
-}
-.photo-container_4 {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    
+.price {
+    background: green;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
 }
 
-.photo-container_4 img {
-    width: 32%; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 0 1%; 
-}
-.photo-container_5 {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 10;
 }
 
-.photo-container_5 img {
-    width: 32%; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 0 1%; 
+.popular {
+    background: orange;
+}
+
+.free-delivery {
+    background: red;
+}
+
+.spicy {
+    background: darkred;
 }
 .photo-container_6 {
     display: flex;
@@ -111,4 +118,19 @@ body {
     height: auto; 
     border-radius: 10px; 
     margin: 0 1%; 
+}
+.magazine-card {
+    width: calc(100% / 3 - 20px);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+}
+.magazine-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
 }
